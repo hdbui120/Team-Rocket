@@ -82,6 +82,9 @@
     <Class name="Silo" GraphicalStyleName="Silo Style">
       <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVFhH7c4xDsAgDANA/v/ptB66RA4QoGQx0jF4iN3MrBQNb6Kh9z58Kf5GhIZe5iBogAZogAZogAZowC8DsvyNCA2Z2aOZcqAhUz4ARsez5UDDnqhkpRxo2FM+AHzZajnQcKR8AHylO+VAwxnlA2C3HGg4q3zACTS8x9oDRcpdPvHF5vEAAAAASUVORK5CYII=</ImageData>
     </Class>
+    <Class name="BurstDisk" GraphicalStyleName="BD">
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACYSURBVFhH7Y7tCoAgEAR7/5e2FBJv2bIIx4h+DNzOrR9LSmkqVpJYSWIliZUkVpJYSWIliZUkMWyRILwZgixH8J0P5K6iHYf26lDChUty56h3ttvRfR1K6BzO9Dp393Uo4eHlO2c93dWhhDd8oEfbP0LPKKEbgixH8H/g/R8gCG+2YQZWklhJYiWJlSRWklhJYiWJlRxpWQHMfCF654mlkAAAAABJRU5ErkJggg==</ImageData>
+    </Class>
   </BaseClass>
   <BaseClass name="MixingEquipment">
     <Class name="BladeAgitator" GraphicalStyleName="Blade Agitator Style">
@@ -205,6 +208,9 @@
     </Class>
     <Class name="ThreeWayValve" GraphicalStyleName="Three Way Valve Style">
       <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHzY5RDsMgDEN7/0szZVJKamwCXZXu46nBfqQcrbVXoWElNKyEhpXQsJI+fMdReBr8z6VwPHsStf8ixBnFu+Au3NsH8kPLWL6CuouZLCLWzfpI5mInC4Y5ypt1EXRkMcNc9+O8ArqyyDDfwW4G+rJQmOewcwZ6skCsj47PmMUzA3tZOJYPlxbOmDmDew6/LJl4mTsU9kUporrsjvfo9SFIM5Szehe9c1gh+0nWM2ioePUBq8t3H0FDxqsP2F664dMQ+YsH7II7FDSshIaV0LASGlZCw0poWEc7Pu8bEYoyUtk9AAAAAElFTkSuQmCC</ImageData>
+    </Class>
+    <Class name="DPLValve" GraphicalStyleName="RV">
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVFhHxYxBDsQwDAL3/5/OytbGwhS32Qs9jApj0s9a61WkdCKlEymdSOlESidSOpHSiZROesnaB0xsJnir4F2FLA8/m/zm7h63TfOtwPEypD6h3qG73FsZHrN/4u4duwpZxIMgPIJ+Z4R3CPsKWU4fQefbdsoH7CtkOfwZ9unGfsO+QhbxKByjNpzRIewrZHl49M8dM8K+QpaDR3eb013rrZw+Ejt0kdUmYF8hCx/hR3ybwF1kfnfprfyO8eXh9uyQ6R5+33hTIQsMJ/ZGwVtG7Sq8hZROpHQipRMpnUjpREonUjqR0sf6fAF5txGKJHjWlwAAAABJRU5ErkJggg==</ImageData>
     </Class>
   </BaseClass>
   <BaseClass name="PipingFittings">
@@ -385,8 +391,8 @@
     <Class name="PrimaryLocInaccessiblePLC" GraphicalStyleName="Primary Loc Inaccessible PLC Style">
       <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADoSURBVFhHxY5REsMgCERz/0tb4xQ0hAVBx3y86YaHS69Syqeow5P0UOMp6Ga7y0EID9rPvuNvDoGiV8nKWw6TJWgv+x4KDW8n0wGFxPNEtAeKEctpRLqgINDcY7YPCjSLMNOJxeJxwutVhVxaxeru4S/kwi5Qfw81Srkb7cZLSixvzZG7Id92OChyN9qNhxx/d4P6exiEXFrF6u5Bik1/wuuFAs0izHRCQaC5x2wfFCOW04h0QSHxPBHtgULD28l0QIFAe9n3UFi8SlbecgiU3NB+9h1/c6jxFHSz3R0/vkAdnkQdnqNcP5n8ne9YL/JOAAAAAElFTkSuQmCC</ImageData>
     </Class>
-    <Class name="Sensor" GraphicalStyleName="PT">
-      <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVFhH1Y6LCkMxCEPv//90NwWL2vhoB71scMaSJpnPGONVoHkTaN4EmhHfD32l+E4FND074ztZApqanTFN9xBoCjLQGYqoutAkdLEaiZBe1scmKGQjCJ+P+ovBZhRuHoFyUXc1ij/55R29GcHGmwdkZU2U6/R9Zv5g0TyAWIaa3aVnxOEBpz3WRmwMEZQ/6RhtxD8doLOnPdZGNIeWkZsHRJlOl/C5+WMayVD2Rpy8G8HG2wewiYLFuBDlQh+aLhyVI1A+2lgMQQpRsUL3sg1oClmxQrrVBjQ11UBGpwtNz+4RlO92oImQ0Q6+mwHNm0DzJtC8x3g+cO8ZgrGjigwAAAAASUVORK5CYII=</ImageData>
+    <Class name="pressuregauge" GraphicalStyleName="PG">
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVFhH1Y6BCgMhDEPv/3/arQWlramNHjg2eMPEJOfTWvsp0LwJNG8CzYzvT/6WxE4FNCM74ztZAZqWnTFLf0jVh6bAlCuYDWgKTHmF7a52sEmWV8RetjMZapLlDJTPNmYjC5KPWOXQnRNqbA5YTu69KAaELMN0hZgbBxWHI5mHiLlxUEGOCDZ72lPtxMaQIPmTjtNO/NMDbPa0p9oJcgjlTrvjoOLFAwSmHzPjMIxi5M09unNCjc0BRJZDvhPDREHy452Yz/qToSZZrrC9bGMyOkyZQbqrPjQ7VZmh2oBmpypXMF1oRnYfIXm2A01EH2WI3RXQvAk0bwLNe7TnAyG7EYqyKmZKAAAAAElFTkSuQmCC</ImageData>
     </Class>
   </BaseClass>
   <BaseClass name="InlineInstruments">
@@ -600,4 +606,11 @@
   </BaseClass>
   <BaseClass name="Pins" />
   <BaseClass name="General Instrument Symbols" />
+  <BaseClass name="Inline Instruments">
+    <Class name="PressureMeasurement" GraphicalStyleName="PT">
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAECSURBVFhHxY4BDsQgCAT7/097QsTYdUHttXrJXGVYkSuldBQqd0LlTqj0yD/5C8E7I6hEVoavZAUqW1aGtcwuQqXx9PGW0QwqhTceN6JZXL74uOHN7ITKkwt88bjBZt8KFVlFYN7AnEd371aUAAsaUa/Fy6GvBy1KE0PIqC94GfT1oEVpYggZ9QUvg74etChNDCGjvuBl0NeDFqWJoZao1+Ll0NeDFqUpXw/LjvCy6OtBi9LE0BO8GejrQYvTC6jIyru8AptBXSdOL6DygwW8mZ1QeXoBwbvwhGgWlcYbS4xmUNnyzxIzd6lEVpeQ/OwdKhk2dAa8G0HlTqjcCZX7SNcPhv0DmDJ9V94AAAAASUVORK5CYII=</ImageData>
+    </Class>
+  </BaseClass>
+  <BaseClass name="Hand Valves" />
+  <BaseClass name="Miscellaneous Equipment" />
 </ProcessPower>

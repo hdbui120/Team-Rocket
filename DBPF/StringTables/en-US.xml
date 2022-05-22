@@ -1,5 +1,30 @@
 <MsgList>
   <Tables>
     <data id="$$dn-Sensor">Sensor</data>
+    <data id="$$dn-pressuregauge">Pressure Gauge</data>
+    <data id="$$dn-pressuregauge-PressureGauge">Pressure Gauge</data>
+    <data id="$$dn-PressureTransducer">Pressure Transducer</data>
+    <data id="$$pl-SSPL$DPLValve_Normally">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-CSC">CSC</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-CSC">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-CSO">CSO</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-CSO">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-LC">LC</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-LC">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-LO">LO</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-LO">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-NC">NC</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-NC">
+    </data>
+    <data id="$$plv-SSPL$DPLValve_Normally-NO">NO</data>
+    <data id="$$pld-SSPL$DPLValve_Normally-NO">
+    </data>
+    <data id="$$dn-DPLValve">DPL Valve</data>
+    <data id="$$dn-BurstDisk">Burst Disk</data>
   </Tables>
 </MsgList>

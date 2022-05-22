@@ -192,57 +192,8 @@
   </ProjectRules>
   <ProjectTriggers>
     <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.InsulationType_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.InsulationType_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.InsulationThickness_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.InsulationThickness_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.LineNumberTag_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.LineNumberTag_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.Service_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.Service_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.InsulationSpec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.InsulationSpec_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.TracingSpec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.TracingSpec_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_Fasteners.TracingType_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Fasteners.TracingType_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>P3dLineGroup</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>P3dLineGroup_Update_PipeRunComponent.InsulationType_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipeRunComponent.InsulationType_PnPPropertyAcquisitionRule</RuleName>
+      <Name>P3dLineGroup_Update_PipeRunComponent.LineNumberTag_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipeRunComponent.LineNumberTag_PnPPropertyAcquisitionRule</RuleName>
       <TableName>P3dLineGroup</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -255,8 +206,8 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>P3dLineGroup_Update_PipeRunComponent.LineNumberTag_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipeRunComponent.LineNumberTag_PnPPropertyAcquisitionRule</RuleName>
+      <Name>P3dLineGroup_Update_PipeRunComponent.InsulationType_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipeRunComponent.InsulationType_PnPPropertyAcquisitionRule</RuleName>
       <TableName>P3dLineGroup</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -269,8 +220,8 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>P3dLineGroup_Update_PipeRunComponent.InsulationSpec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipeRunComponent.InsulationSpec_PnPPropertyAcquisitionRule</RuleName>
+      <Name>P3dLineGroup_Update_PipeRunComponent.TracingType_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipeRunComponent.TracingType_PnPPropertyAcquisitionRule</RuleName>
       <TableName>P3dLineGroup</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -283,8 +234,57 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>P3dLineGroup_Update_PipeRunComponent.TracingType_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipeRunComponent.TracingType_PnPPropertyAcquisitionRule</RuleName>
+      <Name>P3dLineGroup_Update_PipeRunComponent.InsulationSpec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipeRunComponent.InsulationSpec_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.LineNumberTag_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.LineNumberTag_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.InsulationThickness_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.InsulationThickness_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.InsulationType_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.InsulationType_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.Service_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.Service_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.TracingType_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.TracingType_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.TracingSpec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.TracingSpec_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>P3dLineGroup</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>P3dLineGroup_Update_Fasteners.InsulationSpec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Fasteners.InsulationSpec_PnPPropertyAcquisitionRule</RuleName>
       <TableName>P3dLineGroup</TableName>
       <Action>Update</Action>
       <Target>Related</Target>

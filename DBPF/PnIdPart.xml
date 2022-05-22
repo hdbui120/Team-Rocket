@@ -2836,16 +2836,92 @@
         <NotOverridable>false</NotOverridable>
         <ColumnName>Status</ColumnName>
       </PnPRule>
+      <PnPRule xsi:type="PnPClassRule">
+        <Name>SSPL$DPLValve_Normally</Name>
+        <Classname>DPLValve</Classname>
+        <Operator xsi:type="PnPSwitch">
+          <SwitchOperand xsi:type="PnPTableColumn">
+            <ColumnName>Normally</ColumnName>
+          </SwitchOperand>
+          <CaseItems>
+            <PnPCase>
+              <Key xsi:type="xsd:string">CSC</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+            <PnPCase>
+              <Key xsi:type="xsd:string">CSO</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+            <PnPCase>
+              <Key xsi:type="xsd:string">LC</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+            <PnPCase>
+              <Key xsi:type="xsd:string">LO</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+            <PnPCase>
+              <Key xsi:type="xsd:string">NC</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+            <PnPCase>
+              <Key xsi:type="xsd:string">NO</Key>
+              <Action xsi:type="PnPAssignment">
+                <Target xsi:type="PnPObjectProperty">
+                  <CategoryName>Styles</CategoryName>
+                  <PropertyName>GraphicalStyle</PropertyName>
+                </Target>
+                <Source xsi:type="PnPLiteral">
+                  <Value xsi:type="xsd:string" />
+                </Source>
+              </Action>
+            </PnPCase>
+          </CaseItems>
+        </Operator>
+      </PnPRule>
     </ArrayOfPnPRule>
   </ProjectRules>
   <ProjectTriggers>
-    <PnPTrigger>
-      <Name>PipeLines_Update_ReliefValves.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>ReliefValves.Size_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
     <PnPTrigger>
       <Name>PipeLines_Update_ReliefValves.Size2_PnPPropertyAcquisitionRule</Name>
       <RuleName>ReliefValves.Size2_PnPPropertyAcquisitionRule</RuleName>
@@ -2854,50 +2930,8 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>PipeLines_Update_Reducers.Spec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Reducers.Spec_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_PipingFittings.Spec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipingFittings.Spec_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_InlineInstruments.Status_PnPPropertyAcquisitionRule</Name>
-      <RuleName>InlineInstruments.Status_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Rule</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_HandValves.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>HandValves.Size_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_PipingSpecialtyItems.Spec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipingSpecialtyItems.Spec_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_Reducers.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Reducers.Size_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>PipeLines</TableName>
-      <Action>Update</Action>
-      <Target>Related</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PipeLines_Update_PipingSpecialtyItems.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>PipingSpecialtyItems.Size_PnPPropertyAcquisitionRule</RuleName>
+      <Name>PipeLines_Update_ReliefValves.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>ReliefValves.Size_PnPPropertyAcquisitionRule</RuleName>
       <TableName>PipeLines</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -2910,15 +2944,15 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>PipeLines_Update_HandValves.Spec_PnPPropertyAcquisitionRule</Name>
-      <RuleName>HandValves.Spec_PnPPropertyAcquisitionRule</RuleName>
+      <Name>PipeLines_Update_PipingSpecialtyItems.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipingSpecialtyItems.Size_PnPPropertyAcquisitionRule</RuleName>
       <TableName>PipeLines</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>PipeLines_Update_InlineInstruments.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>InlineInstruments.Size_PnPPropertyAcquisitionRule</RuleName>
+      <Name>PipeLines_Update_HandValves.Spec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>HandValves.Spec_PnPPropertyAcquisitionRule</RuleName>
       <TableName>PipeLines</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -2931,22 +2965,50 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>Equipment_Update_Nozzles.Status_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Nozzles.Status_PnPPropertyAcquisitionRule</RuleName>
-      <TableName>Equipment</TableName>
+      <Name>PipeLines_Update_InlineInstruments.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>InlineInstruments.Size_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
       <Action>Update</Action>
-      <Target>Rule</Target>
+      <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>PipeLines_Update_InLineAssets.Status_PnPPropertyAcquisitionRule</Name>
-      <RuleName>InLineAssets.Status_PnPPropertyAcquisitionRule</RuleName>
+      <Name>PipeLines_Update_Reducers.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Reducers.Size_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>PipeLines_Update_PipingFittings.Spec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipingFittings.Spec_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>PipeLines_Update_Reducers.Spec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Reducers.Spec_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>PipeLines_Update_InlineInstruments.Status_PnPPropertyAcquisitionRule</Name>
+      <RuleName>InlineInstruments.Status_PnPPropertyAcquisitionRule</RuleName>
       <TableName>PipeLines</TableName>
       <Action>Update</Action>
       <Target>Rule</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>PipeLines_Update_Nozzles.Size_PnPPropertyAcquisitionRule</Name>
-      <RuleName>Nozzles.Size_PnPPropertyAcquisitionRule</RuleName>
+      <Name>PipeLines_Update_PipingSpecialtyItems.Spec_PnPPropertyAcquisitionRule</Name>
+      <RuleName>PipingSpecialtyItems.Spec_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>PipeLines_Update_HandValves.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>HandValves.Size_PnPPropertyAcquisitionRule</RuleName>
       <TableName>PipeLines</TableName>
       <Action>Update</Action>
       <Target>Related</Target>
@@ -2966,100 +3028,51 @@
       <Target>Related</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>StopCheckValve_SelfTrigger</Name>
-      <RuleName>SSPL$StopCheckValve_Normally</RuleName>
-      <TableName>StopCheckValve</TableName>
+      <Name>PipeLines_Update_Nozzles.Size_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Nozzles.Size_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Related</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>Equipment_Update_Nozzles.Status_PnPPropertyAcquisitionRule</Name>
+      <RuleName>Nozzles.Status_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>Equipment</TableName>
+      <Action>Update</Action>
+      <Target>Rule</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>PipeLines_Update_InLineAssets.Status_PnPPropertyAcquisitionRule</Name>
+      <RuleName>InLineAssets.Status_PnPPropertyAcquisitionRule</RuleName>
+      <TableName>PipeLines</TableName>
+      <Action>Update</Action>
+      <Target>Rule</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>AngleBallValve_SelfTrigger</Name>
+      <RuleName>SSPL$AngleBallValve_Normally</RuleName>
+      <TableName>AngleBallValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>RotaryValve_SelfTrigger</Name>
-      <RuleName>SSPL$RotaryValve_Normally</RuleName>
-      <TableName>RotaryValve</TableName>
+      <Name>LiftCheckValve_SelfTrigger</Name>
+      <RuleName>SSPL$LiftCheckValve_Normally</RuleName>
+      <TableName>LiftCheckValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>NeedleValve_SelfTrigger</Name>
-      <RuleName>SSPL$NeedleValve_Normally</RuleName>
-      <TableName>NeedleValve</TableName>
+      <Name>BreatherValve_SelfTrigger</Name>
+      <RuleName>SSPL$BreatherValve_Normally</RuleName>
+      <TableName>BreatherValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>BallValve_SelfTrigger</Name>
-      <RuleName>SSPL$BallValve_Normally</RuleName>
-      <TableName>BallValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PlugValve_SelfTrigger</Name>
-      <RuleName>SSPL$PlugValve_Normally</RuleName>
-      <TableName>PlugValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>PinchValve_SelfTrigger</Name>
-      <RuleName>SSPL$PinchValve_Normally</RuleName>
-      <TableName>PinchValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>GlobeValve_SelfTrigger</Name>
-      <RuleName>SSPL$GlobeValve_Normally</RuleName>
-      <TableName>GlobeValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>AngleGlobeValve_SelfTrigger</Name>
-      <RuleName>SSPL$AngleGlobeValve_Normally</RuleName>
-      <TableName>AngleGlobeValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>DiverterValve_SelfTrigger</Name>
-      <RuleName>SSPL$DiverterValve_Normally</RuleName>
-      <TableName>DiverterValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>GenericRotaryValve_SelfTrigger</Name>
-      <RuleName>SSPL$GenericRotaryValve_Normally</RuleName>
-      <TableName>GenericRotaryValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>GateValve_SelfTrigger</Name>
-      <RuleName>SSPL$GateValve_Normally</RuleName>
-      <TableName>GateValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>KnifeValve_SelfTrigger</Name>
-      <RuleName>SSPL$KnifeValve_Normally</RuleName>
-      <TableName>KnifeValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>ButterflyValve_SelfTrigger</Name>
-      <RuleName>SSPL$ButterflyValve_Normally</RuleName>
-      <TableName>ButterflyValve</TableName>
-      <Action>Update</Action>
-      <Target>Self</Target>
-    </PnPTrigger>
-    <PnPTrigger>
-      <Name>ValveGeneral_SelfTrigger</Name>
-      <RuleName>SSPL$ValveGeneral_Normally</RuleName>
-      <TableName>ValveGeneral</TableName>
+      <Name>ThreeWayValve_SelfTrigger</Name>
+      <RuleName>SSPL$ThreeWayValve_Normally</RuleName>
+      <TableName>ThreeWayValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
@@ -3085,30 +3098,30 @@
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>ThreeWayValve_SelfTrigger</Name>
-      <RuleName>SSPL$ThreeWayValve_Normally</RuleName>
-      <TableName>ThreeWayValve</TableName>
+      <Name>DiaphragmValve_SelfTrigger</Name>
+      <RuleName>SSPL$DiaphragmValve_Normally</RuleName>
+      <TableName>DiaphragmValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>AngleBallValve_SelfTrigger</Name>
-      <RuleName>SSPL$AngleBallValve_Normally</RuleName>
-      <TableName>AngleBallValve</TableName>
+      <Name>FourWayValve_SelfTrigger</Name>
+      <RuleName>SSPL$FourWayValve_Normally</RuleName>
+      <TableName>FourWayValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>LiftCheckValve_SelfTrigger</Name>
-      <RuleName>SSPL$LiftCheckValve_Normally</RuleName>
-      <TableName>LiftCheckValve</TableName>
+      <Name>ExcessFlowValve_SelfTrigger</Name>
+      <RuleName>SSPL$ExcessFlowValve_Normally</RuleName>
+      <TableName>ExcessFlowValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>BreatherValve_SelfTrigger</Name>
-      <RuleName>SSPL$BreatherValve_Normally</RuleName>
-      <TableName>BreatherValve</TableName>
+      <Name>CheckValve_SelfTrigger</Name>
+      <RuleName>SSPL$CheckValve_Normally</RuleName>
+      <TableName>CheckValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
@@ -3134,30 +3147,107 @@
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>CheckValve_SelfTrigger</Name>
-      <RuleName>SSPL$CheckValve_Normally</RuleName>
-      <TableName>CheckValve</TableName>
+      <Name>PlugValve_SelfTrigger</Name>
+      <RuleName>SSPL$PlugValve_Normally</RuleName>
+      <TableName>PlugValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>DiaphragmValve_SelfTrigger</Name>
-      <RuleName>SSPL$DiaphragmValve_Normally</RuleName>
-      <TableName>DiaphragmValve</TableName>
+      <Name>PinchValve_SelfTrigger</Name>
+      <RuleName>SSPL$PinchValve_Normally</RuleName>
+      <TableName>PinchValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>FourWayValve_SelfTrigger</Name>
-      <RuleName>SSPL$FourWayValve_Normally</RuleName>
-      <TableName>FourWayValve</TableName>
+      <Name>GlobeValve_SelfTrigger</Name>
+      <RuleName>SSPL$GlobeValve_Normally</RuleName>
+      <TableName>GlobeValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
     <PnPTrigger>
-      <Name>ExcessFlowValve_SelfTrigger</Name>
-      <RuleName>SSPL$ExcessFlowValve_Normally</RuleName>
-      <TableName>ExcessFlowValve</TableName>
+      <Name>BallValve_SelfTrigger</Name>
+      <RuleName>SSPL$BallValve_Normally</RuleName>
+      <TableName>BallValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>StopCheckValve_SelfTrigger</Name>
+      <RuleName>SSPL$StopCheckValve_Normally</RuleName>
+      <TableName>StopCheckValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>RotaryValve_SelfTrigger</Name>
+      <RuleName>SSPL$RotaryValve_Normally</RuleName>
+      <TableName>RotaryValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>NeedleValve_SelfTrigger</Name>
+      <RuleName>SSPL$NeedleValve_Normally</RuleName>
+      <TableName>NeedleValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>KnifeValve_SelfTrigger</Name>
+      <RuleName>SSPL$KnifeValve_Normally</RuleName>
+      <TableName>KnifeValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>ButterflyValve_SelfTrigger</Name>
+      <RuleName>SSPL$ButterflyValve_Normally</RuleName>
+      <TableName>ButterflyValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>ValveGeneral_SelfTrigger</Name>
+      <RuleName>SSPL$ValveGeneral_Normally</RuleName>
+      <TableName>ValveGeneral</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>GateValve_SelfTrigger</Name>
+      <RuleName>SSPL$GateValve_Normally</RuleName>
+      <TableName>GateValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>AngleGlobeValve_SelfTrigger</Name>
+      <RuleName>SSPL$AngleGlobeValve_Normally</RuleName>
+      <TableName>AngleGlobeValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>DiverterValve_SelfTrigger</Name>
+      <RuleName>SSPL$DiverterValve_Normally</RuleName>
+      <TableName>DiverterValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>GenericRotaryValve_SelfTrigger</Name>
+      <RuleName>SSPL$GenericRotaryValve_Normally</RuleName>
+      <TableName>GenericRotaryValve</TableName>
+      <Action>Update</Action>
+      <Target>Self</Target>
+    </PnPTrigger>
+    <PnPTrigger>
+      <Name>DPLValve_SelfTrigger</Name>
+      <RuleName>SSPL$DPLValve_Normally</RuleName>
+      <TableName>DPLValve</TableName>
       <Action>Update</Action>
       <Target>Self</Target>
     </PnPTrigger>
